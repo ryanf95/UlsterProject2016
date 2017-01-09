@@ -17,24 +17,29 @@ namespace PlacementHelper
         private PlacementLoggerDBEntities db = new PlacementLoggerDBEntities();
 
         // GET: Logs
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-           
-            if (User.IsInRole("Student"))
+                if (User.IsInRole("Student"))
             {
                 string currentUserId = User.Identity.GetUserId();
                 var logs = db.Logs.Where(uo => uo.UserID == currentUserId).OrderBy(l => l.StartDate);
                 return View(logs.ToList());
 
             }
+            if (!string.IsNullOrEmpty(searchString)&& !User.IsInRole("Student"))
+            {
+                var logs = db.Logs.Where(uo => uo.AspNetUser.Email == searchString).OrderBy(l => l.StartDate);
+                return View(logs.ToList());
+            }
             else
             {
                 var logs = db.Logs.Include(l => l.AspNetUser).OrderBy(l => l.AspNetUser.Email).ThenBy(l => l.StartDate);
                 return View(logs.ToList());
             }
-                
-           
-           
+
+
+
+
         }
 
         // GET: Logs/Details/5

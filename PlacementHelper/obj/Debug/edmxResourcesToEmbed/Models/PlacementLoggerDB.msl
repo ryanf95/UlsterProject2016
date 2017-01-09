@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="PlacementLoggerDBModelStoreContainer" CdmEntityContainer="PlacementLoggerDBEntities">
+  <EntityContainerMapping StorageEntityContainer="PlacementLoggerDBModelStoreContainer" CdmEntityContainer="Entities">
     <EntitySetMapping Name="C__MigrationHistory">
       <EntityTypeMapping TypeName="PlacementLoggerDBModel.C__MigrationHistory">
         <MappingFragment StoreEntitySet="__MigrationHistory">
@@ -43,6 +43,7 @@
         <MappingFragment StoreEntitySet="AspNetUserRoles">
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="description" ColumnName="description" />
         </MappingFragment>
       </EntityTypeMapping>

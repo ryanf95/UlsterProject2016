@@ -38,12 +38,12 @@
   </EntityType>
   <EntityType Name="AspNetUserRoles">
     <Key>
-      <PropertyRef Name="UserId" />
-      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="id" />
     </Key>
     <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
     <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="description" Type="text" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="description" Type="text" Nullable="false" />
   </EntityType>
   <EntityType Name="AspNetUsers">
     <Key>

@@ -8,7 +8,18 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
-</p>
+
+</p>  
+ @using (Html.BeginForm())
+ {
+    if (User.IsInRole("Admin") || User.IsInRole("Lecture"))
+    {
+    <p>
+        Find by email: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+     }
+ }
 <table class="table">
     <tr>
         <th>

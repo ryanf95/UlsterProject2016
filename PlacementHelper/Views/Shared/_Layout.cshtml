@@ -22,13 +22,15 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    @if  (User.IsInRole("Admin") || User.IsInRole("Student")){
+                    @if  (User.IsInRole("Admin") || User.IsInRole("Student") || User.IsInRole("Lecture"))
+                    {
                     <li>@Html.ActionLink("Logs", "Index", "Logs")</li>
                     }
                     @if (User.IsInRole("Admin")){
                     <li>@Html.ActionLink("Create Roles", "Index", "AspNetRoles")</li>
+                    
+                    <li>@Html.ActionLink("Assign Roles", "Index", "AspNetUserRoles")</li>
                     }
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
