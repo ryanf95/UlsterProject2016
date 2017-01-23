@@ -11,12 +11,16 @@ namespace PlacementHelper.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Log
     {
         public System.Guid Id { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/20yy}", ApplyFormatInEditMode = true)]
         public System.DateTime StartDate { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public System.DateTime EndDate { get; set; }
+        [Required]
         public string Description { get; set; }
         public string UserID { get; set; }
     
