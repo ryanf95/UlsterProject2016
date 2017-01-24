@@ -77,10 +77,6 @@ C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHe
 C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\obj\Debug\PlacementHelper.csprojResolveAssemblyReference.cache
 C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\obj\Debug\PlacementHelper.dll
 C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\obj\Debug\PlacementHelper.pdb
-C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\obj\Debug\PlacementHelper.csprojResolveAssemblyReference.cache
-C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\PagedList.dll
-C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\PagedList.Mvc.dll
-C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\PagedList.xml
-C:\Users\ryanf\documents\visual studio 2015\Projects\PlacementHelper\PlacementHelper\bin\PagedList.Mvc.xml
