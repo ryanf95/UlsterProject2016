@@ -12,7 +12,10 @@ textarea{
     height:300px;
     border-radius: 10px; 
 }
-
+.logSizeDescriptions{
+    width: 8000px; height:200px;
+    
+}
 .roundedTextBox
 input{
   -webkit-border-radius: 10px;
@@ -20,4 +23,15 @@ input{
           border-radius: 10px;
 }
 
+.homePageImage
+img{
+    width:304px;
+    height:228px;
+    margin-left:350px;
+      border-radius:40%;
+        filter: drop-shadow(0px 0px 15px white)
+}
 
+.homePageImage{
+   filter:opacity(20%);
+}
