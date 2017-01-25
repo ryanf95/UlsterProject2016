@@ -5,3 +5,19 @@
 .customNavBar{
     font-size:15px !important;
 }
+
+.customTextAreaSize
+textarea{
+    width:300px;
+    height:300px;
+    border-radius: 10px; 
+}
+
+.roundedTextBox
+input{
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+
+
